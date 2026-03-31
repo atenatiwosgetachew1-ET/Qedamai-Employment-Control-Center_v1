@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg, #f7f0e6 0%, #efe4d3 100%);
+  color: #1f1b17;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.hero,
+.panel {
+  background: rgba(255, 252, 246, 0.92);
+  border: 1px solid rgba(87, 62, 33, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(66, 46, 22, 0.08);
+}
+
+.hero {
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.25rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #5d5042;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.panel {
+  padding: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.stat {
+  padding: 14px;
+  border-radius: 14px;
+  background: #f6ede1;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.4rem;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d4c2aa;
+  background: #fffdf8;
+}
+
+textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: #8a4b22;
+  color: #fff8f0;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #ead7bd;
+  color: #3e2c1d;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  padding: 12px;
+  border-radius: 14px;
+  background: #f8f2e8;
+  border: 1px solid rgba(87, 62, 33, 0.12);
+}
+
+.item p,
+.item h3 {
+  margin: 0 0 6px;
+}
+
+.inline-actions {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.reset-note {
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f1e8da;
+  border: 1px solid rgba(87, 62, 33, 0.12);
+}
+
+.muted {
+  color: #6b5c4d;
+}
+
+.error {
+  color: #8d1f1f;
+  margin: 0 0 16px;
+}
+
+.login {
+  max-width: 420px;
+  margin: 8vh auto 0;
+}
+
+@media (max-width: 720px) {
+  .shell {
+    padding: 20px 14px 32px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
